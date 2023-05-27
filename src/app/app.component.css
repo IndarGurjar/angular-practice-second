@@ -1,0 +1,23 @@
+.name{
+    color:blue;
+    font-size: 20px;
+}
+.pass{
+    color:blue;
+    font-size: 20px;
+}
+ form , h1{
+    text-align:center
+ }
+ 
+ .btn{
+   
+    width: 100px;
+    height:30px;
+    border-radius: 5px;
+    border: 2px solid green;
+  
+    font-size: 20px;
+ }
+
+ 
