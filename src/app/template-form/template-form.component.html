@@ -1,0 +1,7 @@
+<p>template-form works!</p>
+<form  #loginForm="ngForm">
+    <input type="text" #name="ngModel" ngModel name="name"> <br> <br>
+    <input type="text" #pass="ngModel" ngModel name="pass"> <br> <br>
+    <button (click)="updateData(loginForm.value)">login</button>
+    
+</form>

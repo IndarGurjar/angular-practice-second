@@ -1,0 +1,30 @@
+<form [formGroup]="loginFromGroup">
+    <div class="form">
+      <div class="form__wrapper px-5 py-3">
+        <div class="form__title mb-1 text-center text-dark">Welcome back</div>
+        <div class="form__subtitle mb-3 text-center">
+          Please login to continue
+        </div>
+  
+        <div class="form__input mb-3">
+          <!-- <input type="text" formControlName="userName" class="form-control" placeholder="Username" />
+          <app-field-errors [fieldName]="'userName'" [formGroup]="loginFromGroup"
+            [getErrorMessage]="getErrorMessage.bind(this)"></app-field-errors> -->
+        </div>
+        <div class="form__input mb-3">
+          <input [type]="showPassword ? 'text' : 'password'" class="form-control" placeholder="Password"
+            formControlName="password" />
+          <!-- <app-field-errors [fieldName]="'password'" [formGroup]="loginFromGroup"
+            [getErrorMessage]="getErrorMessage.bind(this)"></app-field-errors> -->
+          <div class="form__input--icon c-pointer" (click)="showPassword = !showPassword">
+            <i class="bi" [ngClass]="showPassword ? 'bi-eye' : 'bi-eye-slash'"></i>
+          </div>
+        </div>
+        <div class="form__action d-flex justify-content-center">
+          <button (click)="onProceed()" class="btn btn-primary px-5">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
