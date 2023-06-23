@@ -11,6 +11,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { FormControlComponent } from './form-control/form-control.component';
 import { ObservableComponent } from './observable/observable.component';
 import { LoginFormComponent } from './login/login-form/login-form.component';
+import { SignupFormComponent } from './login/signup-form/signup-form.component';
 
 
 
@@ -21,7 +22,8 @@ import { LoginFormComponent } from './login/login-form/login-form.component';
     ReactiveFormComponent,
     FormControlComponent,
     ObservableComponent,
-     LoginFormComponent
+     LoginFormComponent,
+     SignupFormComponent
   ],
   imports: [
     BrowserModule,
